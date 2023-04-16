@@ -1,14 +1,13 @@
 # CryptoPass Personal Data Manager
 
-CryptoPass Personal Data Manager is a free open-source application created to provide a safe and encrypted place for you to manage your personal data in a local database. This application is intended for all users who want to keep their personal data safe without being exposed to the security risks of storing data in the online environment.
+CryptoPass Personal Data Manager is a free open-source CLI application created to provide a safe and encrypted place for you to manage your personal data in a local database. This application is intended for all users who want to keep their personal data safe without being exposed to the security risks of storing data in the online environment.
 
 ## Features
 
 - Strong encryption of personal data
 - Simple and intuitive interface
-- Ability to store information about passwords, credit card numbers, addresses, and other important personal details
+- Ability to store information about passwords, email addresses, and other important personal details
 - Ability to create and manage multiple data files
-- Built-in search functionality
 - Password protection at the application level
 
 ## Requirements and Dependencies
