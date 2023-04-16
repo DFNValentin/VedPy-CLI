@@ -8,6 +8,7 @@ CryptoPass Personal Data Manager is a free open-source advance CLI application c
 - Simple and intuitive interface
 - Ability to store information about passwords, email addresses, and other important personal details
 - Password protection at the application level
+- Two CLI interfaces 
 
 ## Requirements and Dependencies
 
