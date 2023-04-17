@@ -22,11 +22,11 @@ CryptoPass Personal Data Manager is a free open-source advanced CLI application 
 
 1) Download the zip file or clone the source code repository from GitHub.
 2) Install Python 3.6 or newer and pip.
-3) open the folder in the terminal and install requirements pip install -r requirements.txt
+3) open the folder in the terminal and install requirements: `pip install -r requirements.txt`
 4) Rename the folder of the project with any name you want
 5) add in the home directory ( optional )
 
-run in `python3 cryptopass.py` for a practical menu or `python3 cryptopassV0.5.py` for classical one
+run:  `python3 cryptopass.py` for a practical menu or `python3 cryptopassV0.5.py` for classical one
 
 ## For enhanced portability, there are a couple of options available.
 
