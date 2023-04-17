@@ -28,4 +28,17 @@ CryptoPass Personal Data Manager is a free open-source advance CLI application c
 7. run `python3 cryptopass.py` for a practical menu 
                                 or `python3 cryptopassV0.5.py` for classical one
 
+## Portability ( optional but usefull ) 
 
+case 1: 
+
+You can add folder on a USB Stick and secure usb with password for more security and portability but
+this is not the best option for all situation if you want to put your stick on onther computer and the 
+computer don't have python installed it's not the best thing 
+
+this option it's more efficent for pc with dualboot 
+
+case 2: 
+
+You can create a portable Python envirement, donwload python on your usb and then create a virtual
+envirement in usb and then add cryptopass on usb and add password on usb.
