@@ -3,6 +3,23 @@ from utils.cryptopass_database import connection
 from utils.encryption import user_input
 from prettytable import PrettyTable
 import os
+import sys
+
+if os.name == 'posix':
+    if os.geteuid() != 0:
+        print("For your data security, you need to run with root privileges.")
+        os.execvp("sudo", ["sudo", "python3"] + sys.argv)
+elif os.name == 'nt':
+    import ctypes
+
+    if not ctypes.windll.shell32.IsUserAnAdmin():
+        print("For your data security, you need to run with administrator privileges.")
+        ctypes.windll.shell32.ShellExecuteW(
+            None, "runas", sys.executable, " ".join(sys.argv), None, 1)
+else:
+    print("This script requires elevated privileges to run.")
+    print("Please run it with administrator privileges.")
+    
 
 cursor = connection.cursor()
 
