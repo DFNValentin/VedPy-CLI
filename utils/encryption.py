@@ -5,6 +5,11 @@ import os
 dir_keys = 'keys'
 dir_location_key = './' + dir_keys
 
+if not os.path.exists(dir_location_key):
+    os.mkdir(dir_location_key)
+else:
+    pass
+
 
 os.mkdir(dir_location_key)
 
