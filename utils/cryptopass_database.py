@@ -4,7 +4,13 @@ import os
 dir_sql = 'sql'
 dir_location_sql = './' + dir_sql
 
-os.mkdir(dir_location_sql)
+
+if not os.path.exists(dir_location_sql):
+    os.mkdir(dir_location_sql)
+else:
+    pass
+
+
 
 connection = sqlite3.connect('sql/horcrux.db')
 
