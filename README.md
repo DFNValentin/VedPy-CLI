@@ -32,5 +32,5 @@ run in `python3 cryptopass.py` for a practical menu or `python3 cryptopassV0.5.p
 
 In the first case, you could add your Python code to a USB stick and secure it with a password for added security. However, it's worth noting that this option may not be suitable for all situations. For example, if you plan to use the USB stick on a computer that does not have Python installed, this may not be the best solution. However, it could be a more efficient option for computers with dual-boot capabilities.
 
-Alternatively, in the second case, you could create a portable Python environment by downloading Python onto your USB stick and creating a virtual environment on the same drive. You could then add a layer of security by using cryptopass and setting a password for the USB stick. This option could be particularly useful for situations where you need to use your Python code on multiple computers.
+Alternatively, in the second case, you could create a portable Python environment by downloading Python onto your USB stick and creating a virtual environment on the same drive. You could then add a layer of security by setting a password for the USB stick. This option could be particularly useful for situations where you need to use your Python code on multiple computers.
 These suggestions can help ensure that your Python code is easily transportable and secure.
