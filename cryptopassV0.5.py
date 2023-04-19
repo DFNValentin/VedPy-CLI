@@ -3,6 +3,11 @@ from utils.encryption import user_input
 from prettytable import PrettyTable
 import os
 import sys
+<<<<<<< HEAD
+=======
+import subprocess
+
+>>>>>>> master
 
 if os.name == 'posix':
     if os.geteuid() != 0:
@@ -18,7 +23,11 @@ elif os.name == 'nt':
 else:
     print("This script requires elevated privileges to run.")
     print("Please run it with administrator privileges.")
+<<<<<<< HEAD
     
+=======
+    input("Press enter to exit.")
+>>>>>>> master
 
 
 cursor = connection.cursor()
@@ -89,6 +98,14 @@ def menu():
             os.remove('sql/horcrux.db')
             print('All data was removed forever')
             break
+<<<<<<< HEAD
+=======
+
+        elif x == '7':
+            subprocess.call(['node', 'server/runtime.js'])
+            print('running lol')
+
+>>>>>>> master
         else:
             print("Invalid option")
 

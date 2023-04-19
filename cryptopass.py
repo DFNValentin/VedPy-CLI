@@ -2,8 +2,11 @@ import curses
 from utils.cryptopass_database import connection
 from utils.encryption import user_input
 from prettytable import PrettyTable
+
+
 import os
 import sys
+
 
 if os.name == 'posix':
     if os.geteuid() != 0:
@@ -19,7 +22,7 @@ elif os.name == 'nt':
 else:
     print("This script requires elevated privileges to run.")
     print("Please run it with administrator privileges.")
-    
+    input("Press enter to exit.")
 
 cursor = connection.cursor()
 
@@ -61,7 +64,6 @@ def menu():
                 stdscr.addstr(y, x, option)
         stdscr.refresh()
 
-        # Get user input
         key = stdscr.getch()
         if key == curses.KEY_UP:
             current_option = max(0, current_option - 1)
@@ -79,7 +81,6 @@ def menu():
                         stdscr.refresh()
 
                         max_y, max_x = stdscr.getmaxyx()
-                        # Numarul de randuri necesare
                         new_y = content.count('\n') + 1
                         if new_y > max_y:
                             curses.resizeterm(new_y, max_x)

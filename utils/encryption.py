@@ -10,9 +10,12 @@ if not os.path.exists(dir_location_key):
 else:
     pass
 
+<<<<<<< HEAD
 
 os.mkdir(dir_location_key)
 
+=======
+>>>>>>> master
 # Generare key
 if os.path.isfile('keys/private_key.pem') and os.path.isfile('keys/public_key.pem'):
     with open('keys/private_key.pem', 'rb') as f:

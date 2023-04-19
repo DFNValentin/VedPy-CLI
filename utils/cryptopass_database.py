@@ -11,7 +11,10 @@ else:
     pass
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
 connection = sqlite3.connect('sql/horcrux.db')
 
 cursor = connection.cursor()

@@ -1,0 +1,6 @@
+/env
+/utils/__pycache__/
+/sql/*.db
+/keys/*.pem
+/node_modules
+
