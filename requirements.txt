@@ -1,7 +1,0 @@
-autopep8==2.0.2
-prettytable==3.7.0
-pyasn1==0.4.8
-pycodestyle==2.10.0
-rsa==4.9
-tomli==2.0.1
-wcwidth==0.2.6
