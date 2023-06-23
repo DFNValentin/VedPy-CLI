@@ -2,7 +2,7 @@ import curses
 from utils.cryptopass_database import connection
 from utils.encryption import user_input
 from prettytable import PrettyTable
-
+import sqlite3
 
 import os
 import sys
@@ -24,7 +24,11 @@ else:
     print("Please run it with administrator privileges.")
     input("Press enter to exit.")
 
+connection = sqlite3.connect('sql/horcrux.db')
+
 cursor = connection.cursor()
+
+
 
 
 def menu():

@@ -4,6 +4,8 @@ from prettytable import PrettyTable
 import os
 import sys
 import subprocess
+from setuptools import Command
+import sqlite3
 
 
 if os.name == 'posix':
@@ -22,6 +24,7 @@ else:
     print("Please run it with administrator privileges.")
     input("Press enter to exit.")
 
+connection = sqlite3.connect('sql/horcrux.db')
 
 cursor = connection.cursor()
 
@@ -86,6 +89,8 @@ def menu():
 
             print(cursor.rowcount, " row deleted.")
 
+            connection.close()
+
         elif x == '6':
             cursor.execute("""DROP TABLE personal_data""")
             os.remove('sql/horcrux.db')
@@ -93,11 +98,13 @@ def menu():
             break
 
         elif x == '7':
-            subprocess.call(['node', 'server/runtime.js'])
-            print('running lol')
+
+            subprocess.Popen(['flask' ' run'])
 
         else:
             print("Invalid option")
 
 
 menu()
+
+connection.close()

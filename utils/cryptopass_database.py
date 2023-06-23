@@ -34,3 +34,4 @@ def create_table():
 
 
 create_table()
+connection.close()
