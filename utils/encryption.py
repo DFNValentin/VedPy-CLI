@@ -1,4 +1,4 @@
-from utils.cryptopass_database import connection
+from utils.vedpy_database import connection
 import rsa
 import os
 

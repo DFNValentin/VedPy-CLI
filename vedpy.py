@@ -1,5 +1,5 @@
 import curses
-from utils.cryptopass_database import connection
+from utils.vedpy_database import connection
 from utils.encryption import user_input
 from prettytable import PrettyTable
 import sqlite3
@@ -29,8 +29,6 @@ connection = sqlite3.connect('sql/horcrux.db')
 cursor = connection.cursor()
 
 
-
-
 def menu():
     # Initialize curses
     stdscr = curses.initscr()
@@ -39,8 +37,8 @@ def menu():
     stdscr.keypad(True)
     curses.curs_set(0)
 
-    stdscr.addstr(0, curses.COLS // 2 - len("CryptoPass Personal Data Manager") //
-                  2, "CryptoPass Personal Data Manager")
+    stdscr.addstr(0, curses.COLS // 2 - len("Vedpy-CLI Personal Data Manager") //
+                  2, "Vedpy-CLI Personal Data Manager")
 
     stdscr.addstr(2, curses.COLS // 2 - len("Use arrow keys to navigate, Enter to select an option") //
                   2, "Use arrow keys to navigate, Enter to select an option")
@@ -53,8 +51,8 @@ def menu():
     while True:
         # Clear the screen and display the menu options
         stdscr.clear()
-        stdscr.addstr(0, curses.COLS // 2 - len("CryptoPass Personal Data Manager") //
-                      2, "CryptoPass Personal Data Manager")
+        stdscr.addstr(0, curses.COLS // 2 - len("Vedpy-CLI Personal Data Manager") //
+                      2, "Vedpy-CLI Personal Data Manager")
         stdscr.addstr(2, curses.COLS // 2 - len("Use arrow keys to navigate, Enter to select an option") //
                       2, "Use arrow keys to navigate, Enter to select an option")
 

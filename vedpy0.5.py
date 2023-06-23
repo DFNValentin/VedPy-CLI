@@ -1,4 +1,4 @@
-from utils.cryptopass_database import connection
+from utils.vedpy_database import connection
 from utils.encryption import user_input
 from prettytable import PrettyTable
 import os
@@ -96,10 +96,6 @@ def menu():
             os.remove('sql/horcrux.db')
             print('All data was removed forever')
             break
-
-        elif x == '7':
-
-            subprocess.Popen(['flask' ' run'])
 
         else:
             print("Invalid option")

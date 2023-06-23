@@ -1,6 +1,6 @@
 +---------------Documentation---------------+
 |                                           |   
-| Welcome to the Cryptopass Documentation:  |   
+| Welcome to the Vedpy Documentation:       |   
 |                                           |  
 | Option 2: you can add information in your |  
 | local database                            |  
@@ -8,7 +8,7 @@
 | Option 3: decryption and display your     | 
 | personal information                      |
 |                                           |
-| Option 4: Exit from CryptoPass            |
+| Option 4: Exit from Vedpy                 |
 |                                           |
 | Option 5: remove a specific row from      |
 | database                                  |
