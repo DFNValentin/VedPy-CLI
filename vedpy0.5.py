@@ -37,12 +37,12 @@ def menu():
         print("3. Display personal data")
         print("4. Exit")
         print("5. Delete a specific row")
-        print("6. Delete all data")
+        print("6. Delete all data from database")
 
         x = input("Enter option: ")
 
         if x == '1':
-            with open('docs/documentation.txt', 'r') as file:
+            with open('./docs/documentation.txt', 'r') as file:
                 content = file.read()
             print(content)
 

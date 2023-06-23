@@ -45,7 +45,7 @@ def menu():
 
     # Define the menu options
     menu_options = ["Documentation", "Add personal data", "Display personal data",
-                    "Exit", "Delete a specific row", "Delete personal data"]
+                    "Exit", "Delete a specific row", "Delete all data from database"]
     current_option = 0
 
     while True:
@@ -77,7 +77,7 @@ def menu():
 
                 stdscr.clear()
                 try:
-                    with open('docs/documentation.txt', 'r') as file:
+                    with open('./docs/documentation.txt', 'r') as file:
                         content = file.read()
                         stdscr.addstr(0, 0, content)
                         stdscr.refresh()
